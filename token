@@ -1,0 +1,16 @@
+// The 'token' program.
+program token.aleo {
+
+  record token {
+    owner: address, 
+    gates: U64, 
+    amount: u64
+  }
+transition mint(receiver: address, amount: u64) -> token {
+  return token {
+    owner: receiver, 
+    gates: 064, 
+    amount
+  };
+}
+}
