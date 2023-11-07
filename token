@@ -9,7 +9,7 @@ program token.aleo {
 transition mint(receiver: address, amount: u64) -> token {
   return token {
     owner: receiver, 
-    gates: 064, 
+    gates: 0u64, 
     amount
   };
 }
